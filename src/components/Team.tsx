@@ -4,23 +4,20 @@ const teamMembers = [
   {
     name: 'Namik Hasanovic',
     role: 'Gründer',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
     bio: 'Experte für Bautechnik mit über 15 Jahren Erfahrung in der Baubranche.',
     linkedin: '#',
     email: 'namik@normki.com'
   },
   {
-    name: 'Slayko Amic',
-    role: 'Gründer',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face',
+    name: 'Slavko Amic',
+    role: 'Co-Founder',
     bio: 'Technologie-Visionär mit Fokus auf KI-gestützte Lösungen für die Bauindustrie.',
     linkedin: '#',
-    email: 'slayko@normki.com'
+    email: 'slavko@normki.com'
   },
   {
     name: 'Ahmed Mohammed',
-    role: 'KI-Ingenieur',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+    role: 'CTO & Co-Founder',
     bio: 'Machine Learning Spezialist mit Expertise in Computer Vision und Bildanalyse.',
     linkedin: '#',
     email: 'ahmed@normki.com'
@@ -50,17 +47,6 @@ const Team = () => {
               key={index}
               className="group bg-card rounded-3xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2 text-center"
             >
-              <div className="relative inline-block mb-6">
-                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <div className="absolute inset-0 w-24 h-24 rounded-full bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300 mx-auto" />
-              </div>
-              
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-bold">{member.name}</h3>
